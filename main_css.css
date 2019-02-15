@@ -455,6 +455,10 @@ h3 {
 /* КОНЕЦ нижняя черная линейка меню */
 
 
+
+
+
+
 /* НАЧАЛО шапка */
 .head-baner {
 	background-image: url("./img/Top_baner_mob.jpg");
@@ -506,6 +510,10 @@ h3 {
 }
 
 /* КОНЕЦ шапка */
+
+
+
+
 
 
 /* НАЧАЛО хитов */
@@ -645,6 +653,10 @@ h3 {
 /* КОНЕЦ хитов */
 
 
+
+
+
+
 /* НАЧАЛО преимущества */
 .benefits-container {
 	display: flex;
@@ -678,18 +690,26 @@ h3 {
 	margin-top: 20px;
 }
 
-.benefit-info {
-	display: block;
-	text-align: center;
-	font-weight: 600;
-	font-size: 13px;
-	color: #7695A8;
-}
-.benefits-ico {
-	margin: auto;
-	border: 2px solid #7695A8;
-	background-color: white;
-}
+	.benefit-info {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-weight: 600;
+		font-size: 13px;
+		color: #7695A8;	
+	}
+	.benefits-ico {
+		display: block;
+		margin: auto;
+		border: 2px solid #7695A8;
+		background-color: white;
+	}
+	.benefits-txt {
+		display: block;
+		margin: 0px;
+		padding: 0px;
+	}
+
 }
 
 @media (max-width:430px) {
@@ -781,7 +801,6 @@ h3 {
 		border-radius: 60px;
 }
 		
-	}
 	.benefits-txt {
 		display: inline-block;
 		position: absolute;
@@ -815,6 +834,9 @@ h3 {
 		margin: 40px 0px 20px 0px;
 	}
 }
+@madia (min-width:641px) and (max-width:960px) {
+	
+}	
 /* КОНЕЦ банер */
 
 /* НАЧАЛО новости */
