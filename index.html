@@ -10,7 +10,7 @@
 </head>
 
 <body>
-
+ 
 	<div class="test">
 		<picture>
 			<source media="(max-width:640px)" srcset="./img/mob.png">
@@ -189,7 +189,7 @@
 					<source media="(min-width:641px)" srcset="./img/p-kachestvo_w.svg">
 					<img src="./img/p-kachestvo.svg" alt="иконка">
 				</picture>
-				<p class="benefits-txt">проверка <br>качества <br>товара</p>
+				<p class="benefits-txt">Проверка <br>качества <br>товара</p>
 			</div>
 			<div class="benefit-info"> 
 				<picture class="benefits-ico">
@@ -213,7 +213,7 @@
 					<source media="(min-width:641px)" srcset="./img/p-puzzle_w.svg">
 					<img src="./img/p-puzzle.svg" alt="иконка">
 				</picture>
-				<p class="benefits-txt">Ослеживание <br> сочетаемости<br> снастей</p>
+				<p class="benefits-txt">Отслеживание <br> сочетаемости<br> снастей</p>
 			</div>
 			<div class="benefit-info"> 
 				<picture class="benefits-ico">
@@ -248,15 +248,20 @@
 		</div>
 		
 		<div class="news-container">
+			
 			<div class="big-news">
 				<div class="news-date"> 29 декабря 2018 </div>
 				<div class="big-news-header-container">
 					<img src="./img/baikalrift_fishing_2.jpg" alt="Зимняя рыбалка">
 					<div class="big-news-header"><h3>Новогодние праздники в&nbsp;Mikado-shop</h3></div>
 				</div>
-				<p class="news-txt">График работы рыболовного магазина. <br> Поздравляем всех рыболовов и&nbsp;посетителей рыболовного магазина mikado-shop! Желаем крепкого здоровья, материального благополучия, воплощения задуманного...</p>
-				<a href="#"><div class="btm-grey">Подробнее</div></a>
+				<div class="big-news-body">
+					<h3 class="big-news-header2">ПОСТУПЛЕНИЕ РЫБОЛОВНЫХ ПЕРЧАТОК МИКАДО </h3>
+					<p class="news-txt">График работы рыболовного магазина. <br> Поздравляем всех рыболовов и&nbsp;посетителей рыболовного магазина mikado-shop! Желаем крепкого здоровья, материального благополучия, воплощения задуманного...</p>	
+					<a href="#"><div class="btm-grey">Подробнее</div></a>
+				</div>
 			</div>
+				
 			<div class="news">
 				<div class="news-no-pic">
 					<div class="n1">
@@ -285,7 +290,11 @@
 <!-- КОНЕЦ новости-->		
 	
 <!-- БАНЕР-->	
-	<div class="product-baner" ><img src="./img/Baner_sicario_640.jpg" alt="рекламный банер"></div>
+	<picture class="product-baner" >
+		<source media="(max-width:960px)" srcset="./img/Sale_baner_3col.jpg">
+		<source media="(min-width:961px)" srcset="./img/Sale_baner_4col.jpg">
+		<img src="./img/Sale_baner_4col.jpg" alt="рекламный банер">
+	</picture>
 
 <!-- НАЧАЛО накопительные скидки-->		
 	<section class="discount"> 
