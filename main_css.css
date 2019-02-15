@@ -16,6 +16,7 @@ body {
 	z-index: 5;
 	margin-top: 0px;
 	opacity: 0;
+	display:none;
 }
 
 
