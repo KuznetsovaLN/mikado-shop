@@ -698,7 +698,6 @@ a {
 
 	.flags>img {
 		margin-top: 5px;
-		_width: 70px;
 	}
 
 .articul {
@@ -1007,13 +1006,50 @@ a {
 		display: block;
 		margin: auto;
 	}
-	.txt-header-container {
-		margin-bottom: 40px;
-	}
 	.btm-compare-s {
 		display: none;
 	}
 	
+	.txt-header-container {
+		margin-bottom: 40px;
+	}
+	.all-products {
+		display: flex;
+		flex-direction: row;
+    justify-content: space-between;
+		border-left: 1px solid #BCCCDB;
+	}
+	
+	.product-card, .product3, .product4 {
+		padding: 0px 20px 0px 20px;
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		width:25%;
+		border-right: 1px solid #BCCCDB;
+	}
+	.product3>.product-card {
+		width: calc(100% + 40px);
+		margin-left: -20px;
+	}
+	.product4>.product-card {
+		width: calc(100% + 40px);
+		margin-left: -20px;
+	}
+	
+	.product-btms {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		color: green;
+		background-color: red;
+	}
+	
+	.btm-more-info {
+		border-left: 1px solid green;
+		color: green;
+		
+	}
 	.articul {
 		font-size: 14px;
 		margin: 0px;
@@ -1022,19 +1058,6 @@ a {
 		margin: 10px 0px 30px 0px;
 	}
 	
-	.all-products {
-		display: flex;
-		margin: auto;
-		border-left: 1px solid #BCCCDB;
-		margin-bottom: 10px;
-	}
-	.product-card {
-		padding: 0px 20px 0px 20px;
-		display: inline-block;
-		_box-sizing: border-box;
-		width:24%;
-		border-right: 1px solid #BCCCDB;
-	}
 	.product-img {
 		display: block;
 		position: relative;
