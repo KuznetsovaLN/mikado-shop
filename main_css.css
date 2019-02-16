@@ -821,7 +821,7 @@ h3 {
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-around;
-	margin-top: 20px;
+	margin-top: 20px auto 0px auto;
 }
 
 .benefit-info {
@@ -872,17 +872,17 @@ h3 {
 }
 
 @media (max-width:430px) {
-		.benefits-ico {
-			margin: auto;
-			width: 55px;
-			height: 55px;
-		}
-		.benefit-info {
-			font-size: 10px;
-		}
-		.benefits {
-	padding: 15px 10px 0px 10px;
-}
+	.benefits-ico {
+		margin: auto;	
+		width: 55px;
+		height: 55px;
+	}
+	.benefit-info {
+		font-size: 10px;	
+	}
+	.benefits {
+		padding: 15px 10px 0px 10px;
+	}
 }
 
 @media (min-width:641px) and (max-width:960px) {
@@ -897,6 +897,7 @@ h3 {
 
 	.benefits-container {
 		max-width: 700px;
+		margin: auto;
 	}
 
 	.benefit-info {
@@ -930,48 +931,62 @@ h3 {
 
 @media (min-width:960px) {
 	.benefits {		
-		display: flex;
-		justify-content: center;
+		display: block;
+		margin: auto;
+		position: relative;
 		background-image: url("./img/preim_bg.jpg");
 		background-repeat: no-repeat;
 		background-position: top;
 		background-size: cover;	
 		background-color: #BCCCDB;
-		padding: 40px 10px 30px 10px;
+		padding: 40px 0px 30px 0px;
+		box-sizing: border-box;
+	  margin-bottom: 40px;
 	}
 
 	.benefits-all-container {
 		max-width: 1500px;
+		display: block;
+		margin: auto;	
+}
+	.ben-container {
+		max-width: 1100px;
 	}
 		.benefits-container {
-		max-width: 1000px;
+			max-width: 1100px;
 			margin-top: 50px;
 	}
 
 	.benefit-info {
 		display: flex;
 		flex-direction: row;
+		align-self: auto;
 		font-weight: 600;
-		font-size: 13px;
-		line-height: 24px;
+		font-size: 20px;
+		line-height: 26px;
 		color: white;
-		margin-top: 0px;
-		margin-bottom: 60px;
+		margin: 13px 0px 60px 0px;
 	}
 
 	.benefits-ico {
 		border: 2px solid white;
 		background-color: rgba(0,91,127,0.4);
-		width: 100px;
-		height: 100px;
+		width: 110px;
+		height: 110px;
 		border-radius: 60px;
 }
 		
 	.benefits-txt {
 		display: inline-block;
 		position: absolute;
-		padding: 10px 10px 10px 140px;
+		padding-left: 125px;
 	}
+@media (min-width:960px) and (max-width:1020px){	
+	.benefit-info {
+		font-size: 17px;
+		line-height: 24px;
+	}
+}
 }
 	
 /* КОНЕЦ преимущества */
