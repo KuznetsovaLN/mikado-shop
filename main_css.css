@@ -11,12 +11,11 @@ body {
 	position: absolute;
 	margin: 0px;
 	padding: 0px;
-	top: -70px;
+	top: -446px;
 	pointer-events: none;
 	z-index: 5;
 	margin-top: 0px;
-	opacity: 0;
-	display:none;
+	opacity: 0.1;
 }
 
 
@@ -107,7 +106,7 @@ h3 {
 }
 
 
-/* НАЧАЛО - верхняя линейка меню - голубая */
+/* НАЧАЛО - верхняя линейка меню - голубая _______________________________________________________________ верхняя линейка*/
 .top-line{
 	z-index: 10;
 	top: 0px;
@@ -144,17 +143,17 @@ h3 {
 .rega:hover {
 	background-color: #266F99;
 	font-weight: 700;
-	font-size: 14.5px;
+	font-size: 14.7px;
 	}
 .log-in:hover {
 	background-color: #266F99;
 	font-weight: 700;
-	font-size: 14.5px;	
+	font-size: 14.7px;	
 }
 .pay:hover {
 	background-color: #185f87;
 	font-weight: 700;
-	font-size: 14.5px;
+	font-size: 14.7px;
 }
 
 @media (max-width:640px) {
@@ -205,10 +204,25 @@ h3 {
 	.find-mob, .in-mob,.top-mob-tel, .to-katalog, .contacts {
 		display: none;
 	}
-	.top-line, .top-nav-container {
+	.top-line {
 		height: 50px;
 	}
-	.burger, .pay,	.rega, .log-in {
+	
+	.top-nav-container {
+		height: 50px;
+		display: flex;
+		align-items: flex-start;
+		position: relative;
+	}
+	.burger{
+		display: flex;
+		align-items: center;
+		height: 50px;
+		font-size: 15px;
+		box-sizing: border-box;
+		padding: 0px;
+	}
+	.pay{
 		display: flex;
 		align-items: center;
 		height: 50px;
@@ -216,35 +230,139 @@ h3 {
 		box-sizing: border-box;
 		padding: 0px 18px 0px 18px;
 	}
+	.log-in {
+		display: block;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 50px;
+		font-size: 15px;
+		box-sizing: border-box;
+		padding: 0px 18px 0px 18px;
+	}
+	.log-in>img {
+		display: inline-block;
+		position: relative;
+		margin-top: 6px;
+	}
+	.log-in>span {
+		display: inline-block;
+		position: relative;
+		bottom: 8px
+	}
+	.rega {
+		display: block;
+		position: absolute;
+		right: 235px;
+		top: 0px;
+		height: 50px;
+		font-size: 15px;
+		box-sizing: border-box;
+		padding: 0px 18px 0px 18px;
+	}
+	.rega>img {
+		display: inline-block;
+		position: relative;
+		margin-top: 6px;
+	}
+	.rega>span {
+		display: inline-block;
+		position: relative;
+		bottom: 8px
+	}
+	@media (max-width:700px) {
+		.log-in {
+			width: 170px;
+		}
+		.log-in>img {
+			display: inline-block;
+			position: relative;
+			margin-top: 6px;
+		}
+		.log-in>span {
+			display: inline-block;
+			position: absolute;
+			bottom: 5px;
+		}
+		.rega {
+					right: 170px;
 
+		}
+	}
 }
 
 @media (min-width:961px) {
-	.top-line {
-		height: 55px;
-		display: flex;
-		position: fixed;
-		justify-content: center;
-	}
-	
-	.top-nav-container {
-		max-width: 1500px;
-		height: 55px;			
-	}
-	
 	.burger, .find-mob, .in-mob, .top-mob-tel {
 		display: none;
 	}
 	
-	.to-katalog, .contacts, .pay,	.rega, .log-in {
+	.top-line {
+		height: 50px;
+		display: block;
+		margin: auto;	
+	}
+	
+	.top-nav-container {
+		max-width: 1500px;
+		position: relative;
+		height: 50px;	
+		align-items: flex-start;
+		margin: auto;
+		box-sizing: border-box;
+	}
+	
+	.to-katalog, .contacts, .pay{
 		box-sizing: border-box;
 		padding: 0px 20px 0px 20px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 55px;
+		height: 50px;
 		font-size: 20px;
 }
+	.log-in {
+		display: block;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 50px;
+		font-size: 20px;
+		box-sizing: border-box;
+		padding: 0px 18px 0px 18px;
+		box-sizing: border-box;
+	}
+	.log-in>img {
+		display: inline-block;
+		position: relative;
+		margin-top: 10px;
+	}
+	.log-in>span {
+		display: inline-block;
+		position: relative;
+		bottom: 8px
+	}
+	
+		.rega {
+		display: block;
+		position: absolute;
+		right: 284px;
+		top: 0px;
+		height: 50px;
+		font-size: 20px;
+		box-sizing: border-box;
+		padding: 0px 18px 0px 18px;
+		box-sizing: border-box;
+	}
+	.rega>img {
+		display: inline-block;
+		position: relative;
+		margin-top: 10px;
+	}
+	.rega>span {
+		display: inline-block;
+		position: relative;
+		bottom: 8px
+	}
 
 	.rega>img, .log-in>img, .to-katalog>img {
 		height: 30px;
@@ -257,14 +375,36 @@ h3 {
 	.log-in:hover {
 		font-size: 19.6px;
 }
-	.contacts:hover {
-		font-size: 19.6px;
+.contacts:hover {
+	background-color: #266F99;
+	font-weight: 700;
+	font-size: 19.6px;
 }
 		.to-katalog:hover {
 		background-color: #266F99;
 }	
 	.pay:hover {
 		font-size: 19.6px;
+	}
+		@media (max-width:1020px) {
+		.log-in {
+			width: 190px;
+		}
+		.log-in>img {
+			display: inline-block;
+			position: relative;
+			margin-top: 6px;
+		}
+		.log-in>span {
+			display: inline-block;
+			position: absolute;
+			bottom: 4px;
+			line-height: 22px;
+		}
+		.rega {
+					right: 190px;
+
+		}
 	}
 }
 
@@ -273,7 +413,7 @@ h3 {
 
 
 
-/* НАЧАЛО нижняя черная линейка меню */
+/* НАЧАЛО нижняя черная линейка меню _______________________________________________________________ черная линейка */
 
 	.bott-line{
   	background-color: black;
@@ -402,6 +542,7 @@ h3 {
 		position: absolute;
 		left:0px;
 		bottom: 0px;
+				width: 190px;
 	}
 	.questions-img {
 		display: inline-block;
@@ -413,6 +554,15 @@ h3 {
 		position: absolute;
 		top: 16px;
 		left: 62px;
+	}
+	.basket-bott:hover {
+		background: linear-gradient(to top, #ff4229, #CD0006);
+		font-weight: 700;
+	}
+	
+	.questions:hover {
+		font-weight: 700;
+		background: linear-gradient(to top, #8e0105, black);
 	}
 }
 
@@ -432,11 +582,12 @@ h3 {
 		align-items: flex-end;
 		max-width: 1500px;
 	}
-		.questions {
+	.questions {
 		display: block;
 		position: absolute;
 		left:0px;
 		bottom: 0px;
+		width: 235px;
 	}
 	.questions-img {
 		display: inline-block;
@@ -449,7 +600,15 @@ h3 {
 		top: 16px;
 		left: 62px;
 	}
-
+	.basket-bott:hover {
+		background: linear-gradient(to top, #ff4229, #CD0006);
+		font-weight: 700;
+	}
+	
+	.questions:hover {
+		font-weight: 700;
+		background: linear-gradient(to top, #8e0105, black);
+	}
 }
 
 /* КОНЕЦ нижняя черная линейка меню */
@@ -459,7 +618,7 @@ h3 {
 
 
 
-/* НАЧАЛО шапка */
+/* НАЧАЛО шапка _______________________________________________________________ шапка */
 .head-baner {
 	background-image: url("./img/Top_baner_mob.jpg");
 	background-repeat: no-repeat;
@@ -516,7 +675,7 @@ h3 {
 
 
 
-/* НАЧАЛО хитов */
+/* НАЧАЛО хиты продаж _______________________________________________________________ хиты продаж */
 .txt-header-container {
 	display: flex;
 	justify-content: center;}
@@ -657,7 +816,7 @@ h3 {
 
 
 
-/* НАЧАЛО преимущества */
+/* НАЧАЛО преимущества _______________________________________________________________ преимущества */
 .benefits-container {
 	display: flex;
 	flex-flow: wrap;
@@ -803,8 +962,8 @@ h3 {
 	.benefits-ico {
 		border: 2px solid white;
 		background-color: rgba(0,91,127,0.4);
-		width: 120px;
-		height: 120px;
+		width: 100px;
+		height: 100px;
 		border-radius: 60px;
 }
 		
@@ -828,7 +987,7 @@ h3 {
 
 
 
-/* НАЧАЛО банер */
+/* НАЧАЛО банер _______________________________________________________________банер */
 @media (max-width:640px) {
 	.product-baner {
 		display: none;
@@ -853,6 +1012,21 @@ h3 {
 		margin: 40px 0px 20px 0px;
 	}
 }
+
+@media (min-width:960px) {
+		.product-baner-mob {
+		display: none;
+	}
+	.product-baner>img {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		max-width: 1500px;
+		margin: 40px auto 20px auto;
+	}
+}
+
 /* КОНЕЦ банер */
 
 
@@ -861,7 +1035,7 @@ h3 {
 
 
 
-/* НАЧАЛО новости */
+/* НАЧАЛО новости _______________________________________________________________ новости */
 
 	.news-txt {
 		font-size: 16px;
@@ -1030,7 +1204,7 @@ h3 {
 
 /* КОНЕЦ новости */
 
-/* НАЧАЛО скидки */
+/* НАЧАЛО скидки _______________________________________________________________ скидки */
 @media (max-width:640px) {	
 	.discount {
 		padding: 15px 20px 0px 20px;
@@ -1060,7 +1234,7 @@ h3 {
 /* КОНЕЦ скидки */
 
 
-/* НАЧАЛО подвал */
+/* НАЧАЛО подвал _______________________________________________________________ подвал */
 @media (max-width:640px) {
 	
 	.f-menu-container {
@@ -1165,4 +1339,3 @@ h3 {
 }
 
 /* КОНЕЦ подвал */
-
