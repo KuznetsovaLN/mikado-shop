@@ -17,6 +17,7 @@ body {
 	z-index: 5;
 	margin-top: 0px;
 	opacity: 0;
+	display: none;
 }
 
 
@@ -331,7 +332,6 @@ a {
 		font-size: 20px;
 		box-sizing: border-box;
 		padding: 0px 18px 0px 18px;
-		box-sizing: border-box;
 	}
 	.log-in>img {
 		display: inline-block;
@@ -2140,8 +2140,7 @@ input {
   border: 2px solid violet;
   border-radius: 20px;
 	outline: none;
-  background: rgba (108, 181, 218, 0.1);
-  color: white;
+	color: red;
 	  box-sizing: border-box;
 
 }
@@ -2152,7 +2151,6 @@ button {
   width: 55px;
   height: 35px;
   border: 1px solid red;
-  background: rgba (108, 181, 218, 0.1);
   border-radius: 0px 20px 20px 0px;
   cursor: pointer;
 	  box-sizing: border-box;
@@ -2161,7 +2159,7 @@ button {
 button:before {
   content: "\f002";
   font-size: 16px;
-  color: #F9F0DA;
+  _color: #F9F0DA;
 }
 	
 }
