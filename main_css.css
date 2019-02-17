@@ -12,7 +12,7 @@ body {
 	position: absolute;
 	margin: 0px;
 	padding: 0px;
-	top: -752px;
+	top: -725px;
 	pointer-events: none;
 	z-index: 5;
 	margin-top: 0px;
@@ -1789,24 +1789,72 @@ a {
 
 
 /* НАЧАЛО подвал _______________________________________________________________ подвал */
+
+footer {
+	background-image: url(./img/Padval_bg@2x.jpg);
+	background-color: #08517c;
+	background-repeat: no-repeat;	
+	background-position: left top;
+	background-size: cover;
+	color: white;
+}
+
+.f-soc {
+	display: block;
+	text-align: center;
+}
+	
+.f-vk, .f-fb, .f-inst {
+	display:inline-block;
+	margin: 40px 10px 20px 10px;
+	width: 54px;
+	height: 54px;
+	border: 1px solid white;
+	border-radius: 30px;
+	box-sizing: border-box;	
+}
+	
+	.f-vk:hover {
+		border: 2px solid white;
+		background-color: rgba(255, 255, 255, 0.2); 
+		width: 54px;
+		height: 54px;
+		margin: 40px 10px 17px 10px;
+		box-sizing: border-box;
+	}
+	.f-fb:hover {
+		border: 2px solid white;
+		background-color: rgba(255, 255, 255, 0.2); 
+		width: 54px;
+		height: 54px;
+		margin: 40px 10px 17px 10px;
+		box-sizing: border-box;
+	}	
+	.f-inst:hover {
+		border: 2px solid white;
+		background-color: rgba(255, 255, 255, 0.2); 
+		width: 54px;
+		height: 54px;
+		margin: 40px 10px 17px 10px;
+		box-sizing: border-box;
+	}
+
 @media (max-width:640px) {
 	
-	.f-menu-container {
+	.f-menu-container, .f-menu-container-tablet, .f-week-tablet, .f-logo-desktop, .copyright-desktop, .footer-desktop {
 		display: none;
 	}
 	
 	footer {
 		margin-top: 20px;
 		padding: 40px 20px 65px 20px;
-		background-image: url(./img/Padval_bg@2x.jpg);
-		background-color: #08517c;
-		background-repeat: no-repeat;
-		background-position: left top;
-		background-size: contain;
-		color: white;
 	}
-	
-	.footer-container {
+		.footer-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.f-tel-soc-adres {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -1816,39 +1864,6 @@ a {
 		width: 218px;
 	}
 	
-	.f-soc {
-		display: block;
-		text-align: center;
-	}
-	
-	.f-vk, .f-fb, .f-inst {
-		display:inline-block;
-		margin: 40px 10px 20px 10px;
-		width: 54px;
-		height: 54px;
-		border: 1px solid white;
-		border-radius: 30px;
-	}
-	
-	.f-vk:hover {
-		border: 2px solid white;
-		background-color: rgba(255, 255, 255, 0.2); 
-		width: 53px;
-		height: 53px;
-
-	}
-	.f-fb:hover {
-		border: 2px solid white;
-		background-color: rgba(255, 255, 255, 0.2); 
-		width: 53px;
-		height: 53px;
-	}	
-	.f-inst:hover {
-		border: 2px solid white;
-		background-color: rgba(255, 255, 255, 0.2); 
-		width: 53px;
-		height: 53px;
-	}
 	
 	.f-tel {
 		font-size: 30px;
@@ -1878,7 +1893,7 @@ a {
 		padding: 0px 20px 0px 20px;
 	}
 	
-	.f-week {
+	.f-week-mob {
 		font-weight: 700;
 	}
 	
@@ -1889,7 +1904,265 @@ a {
 	.copyright {
 		font-size: 14px;
 	}
+
+}
+
+@media (min-width:641px) and (max-width:960px) {
+	
+	.f-week-mob, .f-logo-desktop, .copyright-desktop, .footer-desktop {
+		display: none;
+	}
+		
+	footer {
+		margin-top: 20px;
+		padding: 95px 20px 65px 20px;
+	}
+
+	.f-logo>img {
+		display: block;
+		width: 300px;
+		margin: auto;
+	}
+	.f-tel-soc-adres {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 35px 20px 30px 20px;
+	}
+	
+	.f-tel-soc {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		padding: 0px;
+		font-size: 27px;
+		line-height: 27px;
+		font-weight: 600;
+		width: 45%;
+	}
+	@media (min-width:641px) and (max-width:700px) {
+		.f-tel-soc {
+			font-size: 24px;
+		}
+	}
+	
+	.f-showroom {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0px;
+		width: 45%;
+		font-size: 16px;
+		line-height: 29px;
+		text-align: center;
+	}
+	.f-showroom>h3 {
+		font-size: 21px;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin: 23px 0px 0px 0px;
+	}
+	.f-soc {
+		margin-top: -28px;
+	}
+	.f-week-tablet {
+		font-weight: 600;
+	}
+	.f-mail {
+		margin: -17px 0px 0px 0px;
+		font-size: 16px;
+	}
+	.copyright {
+		display: flex;
+		justify-content: center;
+		font-size: 18px;
+	}
+	
+	.f-menu-container-tablet {
+		display: flex;
+		flex-direction: row;
+		margin: -15px 0px 30px 20px;
+		
+	}
+	
+	.tablet-box1, .tablet-box2,.tablet-box3 {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 33%;
+		border-left: 1px solid white;
+		font-size: 18px; 
+		line-height: 22px;
+		margin: 10px;
+		box-sizing: border-box;
+	}
+	.tablet-box1>li, .tablet-box2>li,.tablet-box3>li {
+		padding-left: 15px;
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+
+	.tablet-box1>li>a:hover {
+		font-weight: 700;
+	}
+		.tablet-box2>li>a:hover {
+		font-weight: 700;
+	}
+		.tablet-box3>li>a:hover {
+		font-weight: 700;
 	}
 }
 
+
+@media (min-width:960px) {
+	.f-logo, .f-menu-container-tablet, .f-showroom, .copyright {
+		display: none;
+	}
+	.footer-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 1500px;
+		margin: auto;
+		padding: 170px 20px 0px 20px;
+		box-sizing: border-box;
+
+	}
+	.f-logo-desktop>img {
+		display: block;
+		width: 320px;
+		margin: auto;
+		margin-bottom: 15px;
+		margin-top: -22px;
+	}
+	.f-tel-soc {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		width:320px;
+		box-sizing: border-box;
+		font-size: 33px;
+		font-weight: 600;
+		line-height: 33px;
+		margin-bottom: 50px;
+
+	}
+	.copyright-desktop {
+		font-size: 20px;
+	}
+	.f-vk, .f-fb, .f-inst {
+	margin: 5px 5px 20px 5px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid white;
+	border-radius: 30px;
+	box-sizing: border-box;	
+}
+	
+	.f-vk:hover {
+		margin: 5px 5px 20px 5px;
+		width: 60px;
+		height: 60px;
+		box-sizing: border-box;
+	}
+	.f-fb:hover {
+		margin: 5px 5px 20px 5px;
+		width: 60px;
+		height: 60px;
+		box-sizing: border-box;
+	}	
+	.f-inst:hover {
+		margin: 5px 5px 20px 5px;
+		width: 60px;
+		height: 60px;
+		box-sizing: border-box;
+	}
+	
+	.footer-desktop {
+		width: 58%;
+		padding-top: 45px;
+	}
+	
+	.f-menu-adress {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.f-menu-adress-box1, .f-menu-adress-box2, .f-menu-adress-box3 {
+		display: flex;
+		flex-direction: column;
+		width: 33%;
+		align-items: flex-start;
+		font-size: 21px;
+		line-height: 28px;
+		box-sizing: border-box;
+	}
+	
+	.f-menu-adress-box1>li{
+		margin-top: 5px;
+		margin-bottom: 16px;
+	}
+	.f-menu-adress-box2>li {
+		margin-top: 5px;
+		margin-bottom: 17px;
+	}
+	@media (min-width:960px) and (max-width:1420px) {
+	.f-menu-adress-box3 {
+		padding-left: 20px;
+		box-sizing: border-box;
+	}
+	}
+	.f-menu-adress-box3>h3 {
+		text-transform: uppercase;
+		margin: 0px;
+		font-size: 25px;
+	}
+	.f-menu-adress-box3>p {
+			line-height: 25px;
+			margin: 20px 0px 5px 0px;
+	}
+	
+	.f-week-desktop {
+		font-weight: 600;
+	}
+	form {
+  position: relative;
+  width: 90%;
+  margin: 0px 0px 55px 0px;
+  box-sizing: border-box;
+}
+input {
+  width: 100%;
+  height: 35px;
+  padding-left: 10px;
+  border: 2px solid violet;
+  border-radius: 20px;
+	outline: none;
+  background: rgba (108, 181, 218, 0.1);
+  color: white;
+	  box-sizing: border-box;
+
+}
+button {
+  position: absolute; 
+  top: 0;
+  right: 0px;
+  width: 55px;
+  height: 35px;
+  border: 1px solid red;
+  background: rgba (108, 181, 218, 0.1);
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+	  box-sizing: border-box;
+
+}
+button:before {
+  content: "\f002";
+  font-size: 16px;
+  color: #F9F0DA;
+}
+	
+}
 /* КОНЕЦ подвал */
