@@ -57,6 +57,7 @@
 <!-- НАЧАЛО шапки -->
 	<header>
 		<div class="header-container">
+			<div class="headre-content">
 			<div class="header-logo">
 				<img src="./img/Mikado_LOGO.svg" alt="логотип микадо">
 			</div>
@@ -71,11 +72,21 @@
   				<button type="submit"></button>
 				</form>
 			</div>
-			<div class="head-baner"> 
-				<p class="baner-mob-txt1">Все лучшее </p> 
-				<p class="baner-mob-txt2">для рыбалки</p>
 			</div>
-			<div class="black-line-mob"></div>
+			<div class="head-baner"> 
+				<div class="head-baner-txt">
+					<p class="baner-mob-txt1">Все лучшее </p> 
+					<p class="baner-mob-txt2">для рыбалки</p>
+					<p class="baner-txt1">МИКАДО</p> 
+					<p class="baner-txt2">Все лучшее для рыбалки</p>
+				</div>
+				<picture class="head-baner-pic" >
+					<source media="(max-width:960px)" srcset="./img/Top_baner_mob.jpg">
+					<source media="(min-width:961px)" srcset="./img/Top_baner@2x.jpg">
+					<img src="./img/Top_baner.jpg" alt="верхний банер">
+				</picture>
+				<div class="black-line-mob"></div>
+			</div>
 			<div class="main-menu"> 
 			</div>
 			<div class="sub-menu"> </div>
@@ -414,9 +425,9 @@
 					<p>© 2010—2019 «Mikado-shop»</p>
 				</div>
 				<div class="f-soc">
-					<a href="#"><div class="f-vk"><img src="./img/i-s-vk-w.svg"></div></a>
-					<a href="#"><div class="f-fb"><img src="./img/i-s-fb-w.svg" alt="меню"></div></a>
-					<a href="#"><div class="f-inst"><img src="./img/i-s-inst-w.svg" alt="меню"></div></a>
+					<a href="#"><div class="f-vk"><img src="./img/i-s-vk-w.svg" alt="вконтакте"></div></a>
+					<a href="#"><div class="f-fb"><img src="./img/i-s-fb-w.svg" alt="фейсбук"></div></a>
+					<a href="#"><div class="f-inst"><img src="./img/i-s-inst-w.svg" alt="инстаграм"></div></a>
 				</div>
 				<div class="f-tel"> 
 					<p>+7 (800) 550-28-67</p>
@@ -462,7 +473,7 @@
 			<div class="footer-desktop">
 				<form class="f-search"> 
   				<input type="text" placeholder=" ">
-  				<button type="submit"><img class="search-icon" src="./img/p-kachestvo_w.svg"></button>
+  				<button type="submit"><img class="search-icon" src="./img/p-kachestvo_w.svg" alt="лупа"></button>
 				</form>
 				<div class="f-menu-adress"> 
 					<ul class="f-menu-adress-box1">
