@@ -696,7 +696,7 @@ a {
 }
 
 @media (min-width:641px) and (max-width:960px) {
-		.header-clock, .baner-mob-txt1, .baner-mob-txt2{
+		.header-clock, .baner-mob-txt1, .baner-mob-txt2, .main-menu-info-display {
 		display: none;
 	}
 			
@@ -713,17 +713,42 @@ a {
 		margin: 0px;
 		font-size: 22px;
  	}
-		.main-menu {
-			margin-top: -3px;
+	.main-menu-container {
+		margin-top: -3px;
 		display: block;
 		position: relative;
 		height: 50px;
 		width: 100%;
 		background-color: black;
+		padding: 0px 20px 0px 20px;
+		box-sizing: border-box;
+	}
+	.main-menu-info-tablet{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		box-sizing: border-box;
+	}
+	.main-menu-info-tablet>li {
+		display: flex;
+		align-items: center;
+		height: 50px;
+		padding: 0px 20px 0px 20px;
+		font-size: 16px;
+		box-sizing: border-box;
+	}
+	.mm-katalog{
+		background-color: #CD0006;
+	}
+	.main-menu-info-tablet>li:hover {
+				background: linear-gradient(to top, #ff4229, #CD0006);
+	}
+	.main-menu-info-tablet>li>a:hover {
+			font-weight: 700;
 	}
 	}
 @media (min-width:961px){
-		.baner-mob-txt1, .baner-mob-txt2{
+		.baner-mob-txt1, .baner-mob-txt2, .main-menu-info-tablet {
 		display: none;
 	}
 			
@@ -742,15 +767,41 @@ a {
 		font-size: 33px;
 	}
 	
-	.main-menu {
+		.main-menu-container {
 		margin-top: -3px;
 		display: block;
 		position: relative;
-		height: 55px;
+		height: 50px;
 		width: 100%;
 		background-color: black;
+		padding: 0px 20px 0px 20px;
+		box-sizing: border-box;
 	}
-	.sub-menu {
+	.main-menu-info-display{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		box-sizing: border-box;
+	}
+	.main-menu-info-display>li {
+		display: flex;
+		align-items: center;
+		height: 50px;
+		padding: 0px 20px 0px 20px;
+		font-size: 16px;
+		box-sizing: border-box;
+	}
+	.mm-katalog{
+		background-color: #CD0006;
+	}
+	.main-menu-info-display>li:hover {
+				background: linear-gradient(to top, #ff4229, #CD0006);
+	}
+	.main-menu-info-display>li>a:hover {
+			font-weight: 700;
+	}
+	
+	.sub-menu-container {
 		margin-top: -3px;
 		display: block;
 		position: relative;
