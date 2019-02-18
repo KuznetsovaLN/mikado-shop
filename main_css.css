@@ -621,17 +621,44 @@ a {
 
 /* НАЧАЛО шапка _______________________________________________________________ шапка */
 .head-baner {
-	background-image: url("./img/Top_baner_mob.jpg");
-	background-repeat: no-repeat;
-	background-position: top;
-	background-size: cover;	
 	background-color: #BCCCDB;
 }
 
+	.head-baner-pic>img {
+		object-fit: cover;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+	}
+
+	.head-baner {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+ 	}
+
+	.head-baner-txt {
+		display: block;
+		position: absolute;
+		color: white;
+	 	text-transform: uppercase;
+		text-align: center;
+		font-weight: 500;
+}
+
 @media (max-width:640px) {
-	.header-info-container, .sub-menu, .main-menu{
+	.header-info-container, .sub-menu, .main-menu, .baner-txt1, .baner-txt2{
 		display: none;
 	}
+
+	.head-baner-txt {		
+		font-size: 24px;
+		padding-left: 60px;
+		padding-top: 20px;
+	}
+
 	.header-logo {
 		margin-top: 73px;
 		margin-bottom: 0px;
@@ -642,31 +669,95 @@ a {
 	.header-logo>img {
 	 height: 138px;
 	}
- 	.head-baner {
-	 	margin: -26px 0px 0px 0px;
-	 	height: 100%;
- 	}
- 	.baner-mob-txt1, .baner-mob-txt2 {
-	 	color: white;
-	 	font-size: 26px;
-	 	text-transform: uppercase;
-	 	line-height: 13px;
-		text-align: center;
-		font-weight: 500;
- 	}
+ 
  	.baner-mob-txt1 {
 		padding-right: 130px;
-	 	padding-top: 70px;
+		margin: 0px;
  	}
  	.baner-mob-txt2 {
 		padding-left: 30px;
+		margin: 0px;
+
  	}
  	.black-line-mob {
 		display: block;
-	 	height: 10px;
+	 	height: 8px;
 	 	width: 100%;
 	 	background-color: black;
+		margin-top: -3px;
  	}
+
+}
+@media (max-width:430px) {
+	.head-baner-txt {	 	
+		font-size: 20px;
+		padding-left: 10px;
+	}
+}
+
+@media (min-width:641px) and (max-width:960px) {
+		.header-clock, .baner-mob-txt1, .baner-mob-txt2{
+		display: none;
+	}
+			
+	.head-baner-txt {
+		padding-top: 30px;
+	}
+ 	.baner-txt1 {
+		padding-right: 130px;
+		margin: 0px;
+		font-size: 50px;
+ 	}
+ 	.baner-txt2 {
+		padding-left: 30px;
+		margin: 0px;
+		font-size: 22px;
+ 	}
+		.main-menu {
+			margin-top: -3px;
+		display: block;
+		position: relative;
+		height: 50px;
+		width: 100%;
+		background-color: black;
+	}
+	}
+@media (min-width:961px){
+		.baner-mob-txt1, .baner-mob-txt2{
+		display: none;
+	}
+			
+	
+	.head-baner-txt {
+		padding-top: 30px;
+	}
+ 	.baner-txt1 {
+		padding-right: 130px;
+		margin: 0px;
+		font-size: 90px;
+ 	}
+ 	.baner-txt2 {
+		padding-left: 30px;
+		margin: 0px;
+		font-size: 33px;
+	}
+	
+	.main-menu {
+		margin-top: -3px;
+		display: block;
+		position: relative;
+		height: 55px;
+		width: 100%;
+		background-color: black;
+	}
+	.sub-menu {
+		margin-top: -3px;
+		display: block;
+		position: relative;
+		height: 55px;
+		width: 100%;
+		background-color: #BCCCDB;
+	}
 }
 
 /* КОНЕЦ шапка */
@@ -2021,7 +2112,7 @@ footer {
 		display: none;
 	}
 	footer {
-		background-size: cover;
+		_background-size: cover;
 	}
 	.footer-container {
 		display: flex;
