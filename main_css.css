@@ -12,11 +12,11 @@ body {
 	position: absolute;
 	margin: 0px;
 	padding: 0px;
-	top: 0px;
+	top: -33px;
 	pointer-events: none;
 	z-index: 5;
 	margin-top: 0px;
-	opacity: 0.2;
+	opacity: 0.3;
 }
 
 
@@ -913,7 +913,6 @@ header {
 		padding: 0px;
 	}
 	
-	
 	.header-tel{
 		position: relative;
 		border-left: 1px solid #BCCCDB;
@@ -1032,7 +1031,7 @@ header {
   	width: 93%;
   	box-sizing: border-box;	
  		background-color: rgba rgba(100, 100, 100, 0);
-					margin-bottom: 10px;
+		margin-bottom: 10px;
 
 	}
 	.header-search>input {
@@ -1062,36 +1061,14 @@ header {
 		background-repeat: no-repeat;
 		background-position: -146px 4px;
 	}
-	button:hover {
+	.header-search>button :hover {
 		background-position: -146px -51px;
 	}
-		button:active {
+	.header-search>button:active {
 		background-position: -146px -108px;
 	}
 	
-	
-	
- 	.baner-mob-txt1 {
-		padding-right: 130px;
-		margin: 0px;
- 	}
- 	.baner-mob-txt2 {
-		padding-left: 30px;
-		margin: 0px;
-
- 	}
- 	.black-line-mob {
-		display: block;
-	 	height: 8px;
-	 	width: 100%;
-	 	background-color: black;
-		margin-top: -3px;
- 	}
-	
-	
-	
-	
-			
+	/* имиджевый банер */		
 	.head-baner-txt {
 		padding-top: 30px;
 	}
@@ -1105,14 +1082,16 @@ header {
 		margin: 0px;
 		font-size: 22px;
  	}
+	
+	/* главное меню */
 	.main-menu-container {
 		margin-top: -3px;
-		display: block;
-		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 		height: 50px;
 		width: 100%;
 		background-color: black;
-		padding: 0px 20px 0px 20px;
 		box-sizing: border-box;
 	}
 	.main-menu-info-tablet{
@@ -1120,29 +1099,76 @@ header {
 		flex-direction: row;
 		justify-content: space-between;
 		box-sizing: border-box;
+		width: 100%;
 	}
-	.main-menu-info-tablet>li {
-		display: flex;
-		align-items: center;
-		height: 50px;
-		padding: 0px 20px 0px 20px;
-		font-size: 16px;
-		box-sizing: border-box;
-	}
+	
 	.mm-katalog{
 		background-color: #CD0006;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+		font-size: 16px;
+		box-sizing: border-box;
+		width: 19%;
 	}
-	.main-menu-info-tablet>li:hover {
-				background: linear-gradient(to top, #ff4229, #CD0006);
+	
+	.mm-sale {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+		font-size: 16px;
+		box-sizing: border-box;
+		width: 24%;
 	}
-	.main-menu-info-tablet>li>a:hover {
-			font-weight: 700;
+	
+		.mm-discounts {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+		font-size: 16px;
+		box-sizing: border-box;
+		width: 30%;
 	}
+		.mm-prezents {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+		font-size: 16px;
+		box-sizing: border-box;
+		width: 27%;
+	}
+	.mm-katalog:active {
+		background: linear-gradient(to top, #ff4229, #CD0006);
+		font-weight: 700;
+				font-size: 17px;
+
+	}	
+	.mm-sale:active {
+		background: linear-gradient(to top, #ff4229, #CD0006);
+		font-weight: 700;
+				font-size: 17px;
+	}	
+	.mm-discounts:active {
+		background: linear-gradient(to top, #ff4229, #CD0006);
+		font-weight: 700;
+				font-size: 17px;
+	}
+	.mm-prezents:active {
+		background: linear-gradient(to top, #ff4229, #CD0006);
+		font-weight: 700;
+		font-size: 17px;
+	}
+
 }
 @media (min-width:961px){
 		.baner-mob-txt1, .baner-mob-txt2, .main-menu-info-tablet, .header-soc, .h-time-txt-h, .h-time-txt {
 		display: none;
 	}
+
 
 	.header-mikado-logo {
 		margin: 25px 20px 20px 20px;
