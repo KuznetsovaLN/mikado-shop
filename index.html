@@ -22,34 +22,40 @@
 	<!-- НАЧАЛО Верхняя синяя линейка меню -->
 	<nav class="top-line">
 		<div class="top-nav-container">
-			<ul class="top-menu">
-				<li><a href="#"><div class="burger"><img src="./img/Gamb.svg" alt="меню"></div></a></li>
-				<li class="top-mob-tel">+7 (800) 550-28-67</li>
-				<li><a href="#"><div class="find-mob"><img src="./img/find.svg" alt="иконка поиска"><p>Поиск</p></div></a></li>
-				<li><a href="#"><div class="in-mob"><img src="./img/i-locker.svg" alt="иконка входа"><p>Вход</p></div></a></li>
-				<li><a href="#"><div class="to-katalog"><img src="./img/i-mikado.svg" alt="логотип микадо"></div></a></li>
-				<li><a href="#"><div class="pay">Оплата и&nbsp;доставка</div></a></li>
-				<li><a href="#"><div class="contacts">Контакты</div></a></li>
-				<li><a href="#"><div class="rega"><img src="./img/i-person.svg" alt="иконка регистрации"><span>Регистрация</span></div></a></li>
-				<li><a href="#"><div class="log-in" ><img src="./img/i-locker.svg" alt="иконка входа"><span>Личный кабинет</span></div></a></li>
+			<ul class="top-menu-left">
+				<li class="burger"><a href="#"></a></li>
+				<li class="to-katalog"><a href="#"></a></li>
+				<li><a class="pay" href="#">Оплата и&nbsp;доставка</a></li>
+				<li><a class="contacts" href="#">Контакты</a></li>
+			</ul>
+			<div class="top-mob-tel">+7 (800) 550-28-67</div>
+			<ul class="top-menu-right">
+				<li><a class="find-mob" href="#">Поиск</a></li>
+				<li><a class="in-mob" href="#">Вход</a></li>
+				<li><a class="rega" href="#">Регистрация</a></li>
+				<li><a class="log-in" href="#">Личный кабинет</a></li>
 			</ul>
 		</div>
   </nav>
 	<!-- КОНЕЦ Верхняя синяя линейка меню -->
 	
+	
+	
 	<!-- НАЧАЛО Нижняя чераня линейка меню -->
 	<nav class="bott-line">
+		<ul class="bott-menu-mob">
+			<li class="bott-mob-k"><a class="katalog-mob" href="#"><div class="katalog-mob-ico"></div>Каталог</a></li>
+			<li class="bott-mob"><a class="sale-mob" href="#"><div class="sale-mob-ico"></div>Распродажа</a></li>
+			<li class="bott-mob"><a class="pay-mob" href="#"><div class="pay-mob-ico"></div>Оплата <br>и доставка</a></li>
+			<li class="bott-mob"><a class="basket-mob" href="#"><div class="basket-mob-ico"></div>Корзина</a></li>
+		</ul>
 		<div class="bott-nav-container">
-			<ul class="bott-menu">
-				<li class="bott-mob"><a href="#"><div class="katalog-mob"><img src="./img/i-mikado.svg" width="39" height="32" alt="меню"><p>Каталог</p></div></a></li>
-				<li class="bott-mob"><a href="#"><div class="sale-mob"><img src="./img/i-sale.svg" alt="иконка распродажи"><p>Распродажа</p></div></a></li>
-				<li class="bott-mob"><a href="#"><div class="pay-mob"><img src="./img/i-car.svg" alt="иконка оплаты-доставки"><p>Оплата <br> и доставка</p></div></a></li>
-				<li class="bott-mob"><a href="#"><div class="basket-mob"><img src="./img/i-korz-w.svg" alt="корзина"><p>  Корзина</p></div></a></li>
-				<li><a href="#"><div class="questions"><img class="questions-img" src="./img/i-question.svg" alt="иконка-вопрос"><span class="questions-txt"> Есть вопросы?</span></div></a> </li>
-				<li> <div class="bank-tablet"><img src="./img/bank-t.png" alt="виза, масткр, маэстро и мир"></div></li>
-				<li> <div class="bank-desktop"><img src="./img/bank.png" alt="виза, масткр, маэстро и мир"></div></li>
-				<li><a href="#"><div class="basket-bott"><img src="./img/i-korz-w.svg" alt="корзина"><span>Корзина</span></div></a></li>
-			</ul>
+			<a href="#"><div class="questions"> Есть вопросы?</div></a>
+			<div class="bott-menu">
+				<div class="bank-tablet"><img src="./img/bank-t.png" alt="виза, мастeр, маэстро и мир"></div>
+				<div class="bank-desktop"><img src="./img/bank.png" alt="виза, мастeр, маэстро и мир"></div>
+				<a class="basket-bott" href="#">Корзина</a>
+			</div>
 		</div>
   </nav>
 <!-- КОНЕЦ Нижняя чераня линейка меню -->	
@@ -57,22 +63,51 @@
 <!-- НАЧАЛО шапки -->
 	<header>
 		<div class="header-container">
-			<div class="headre-content">
-			<div class="header-logo">
-				<img src="./img/Mikado_LOGO.svg" alt="логотип микадо">
-			</div>
-			<div class="header-info-container">
-				<div class="header-tel">
+			
+<!--  верх шапки с лого, координатами и корзиной -->
+			<div class="header-content">
+				<div class="header-logo">
+					<a href="#"><img class="header-mikado-logo" src="./img/Mikado_LOGO.svg" alt="логотип микадо"></a>
+					<div class="header-soc">
+						<a class="vk" href="#"></a>
+						<a class="fb" href="#"></a>
+						<a class="inst" href="#"></a>
+					</div>
+			
 				</div>
-				<div class="header-clock"> 
+				
+				<div class="header-info-container">
+					<div class="header-info">
+						<div class="header-tel">
+							<h3 class="h-tel-txt">+7 (800) 550-28-67 <br>+7 (495) 518-28-67 </h3>
+							<h3 class="h-time-txt-h">Часы работы </h3>
+							<p class="h-time-txt">пн-пт: 10:00 - 19:00 <br>сб: 10:00 - 16:00</p>
+							<div class="header-soc-desktop">
+								<a class="vk" href="#"></a>
+								<a class="fb" href="#"></a>
+								<a class="inst" href="#"></a>
+							</div>
+						</div>
+					
+						<div class="header-clock"> 
+							<h3 class="h-time-txt-h-d">Часы работы </h3>
+							<p class="h-time-txt-d">пн-пт: 10:00 - 19:00 <br>сб: 10:00 - 16:00 <br>Вс: выходной</p>
+						</div>
+					
+						<div class="header-basket">
+							<h3 class="h-basket-h">Ваша корзина</h3>
+							<p class="h-basket-txt"> 00 000 <span class="small">шт.</span> <br>00 000 <span class="small">руб.</span></p>
+						</div>
+					</div>
+					<form class="header-search">
+  					<input type="text" placeholder="">
+  					<button type="submit"></button>
+					</form>
+				
 				</div>
-				<div class="basket"></div>
-				<form class="header-search">
-  				<input type="text" placeholder="Искать здесь...">
-  				<button type="submit"></button>
-				</form>
 			</div>
-			</div>
+
+<!-- банер-картинка -->			
 			<div class="head-baner"> 
 				<div class="head-baner-txt">
 					<p class="baner-mob-txt1">Все лучшее </p> 
@@ -87,6 +122,8 @@
 				</picture>
 				<div class="black-line-mob"></div>
 			</div>
+			
+<!-- глвное меню-->				
 			<div class="main-menu-container"> 
 				<div class="main-menu">
 					<ul class="main-menu-info-tablet">
@@ -106,11 +143,14 @@
 					</ul>
 				</div>
 			</div>
-			<div class="sub-menu-container"> </div>
+			
+<!-- серое меню в десктопе-->					
+			<div class="sub-menu-container">
 				<div class="sub-menu">
 				</div>
-		</div>
+		</div>	
 		
+		</div>		
 	</header>
 	
 <!-- КОНЕЦ шапки -->	
