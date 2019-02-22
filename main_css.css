@@ -1144,28 +1144,24 @@ header {
 	.mm-katalog:hover {
 		background: linear-gradient(to top, #ff4229, #CD0006);
 		font-weight: 700;
-				font-size: 17px;
 
 	}	
-	.mm-sale:active {
+	.mm-sale:hover {
 		background: linear-gradient(to top, #ff4229, #CD0006);
 		font-weight: 700;
-				font-size: 17px;
 	}	
-	.mm-discounts:active {
+	.mm-discounts:hover {
 		background: linear-gradient(to top, #ff4229, #CD0006);
 		font-weight: 700;
-				font-size: 17px;
 	}
-	.mm-prezents:active {
+	.mm-prezents:hover {
 		background: linear-gradient(to top, #ff4229, #CD0006);
 		font-weight: 700;
-		font-size: 17px;
 	}
 
 }
 @media (min-width:961px){
-		.baner-mob-txt1, .baner-mob-txt2, .main-menu-info-tablet, .header-soc, .h-time-txt-h, .h-time-txt {
+	.baner-mob-txt1, .baner-mob-txt2, .main-menu-info-tablet, .header-soc, .h-time-txt-h, .h-time-txt {
 		display: none;
 	}
 
@@ -1201,7 +1197,6 @@ header {
 		margin-bottom: 0px;
 	}
 
-	
 	.vk {
 		margin: 8px;
 		width: 46px;
@@ -1210,7 +1205,6 @@ header {
 		background-repeat: no-repeat;
 		background-position: -11px -83px;
 	}
-	
 	.vk:hover {
 		background-position: -11px -152px;
 	}
@@ -1232,6 +1226,7 @@ header {
 	.fb:active {
 		background-position: -72px -222px;
 	}
+	
 	.inst {
 		margin: 8px;
 		width: 46px;
@@ -1256,7 +1251,6 @@ header {
 		width: 100%;
 		padding: 0px;
 	}
-	
 	
 	.header-tel {
 		position: relative;
@@ -1286,7 +1280,6 @@ header {
 		margin: 3px 0px 0px -60px;
 	}
 	
-	
 	.header-basket {
 		border-left: 1px solid #BCCCDB;
 		width: 30%;
@@ -1294,7 +1287,6 @@ header {
 		padding-left: 20px;
 		box-sizing: border-box;
 	}
-	
 	.header-basket:before {
 		content: url("./img/i-basket-d.svg");
 		position: absolute;
@@ -1331,7 +1323,6 @@ header {
 		text-transform: uppercase;
 		margin-bottom: 0px;
 	}
-	
 	.h-basket-txt {
 		margin-top: 20px;
 		font-weight: 500;
@@ -1339,7 +1330,6 @@ header {
 		color: #7695A8;
 		margin-bottom: 0px;
 	}
-
 	.small {
 		font-size: 14px;
 		font-weight: 700;
@@ -1527,16 +1517,64 @@ header {
 		text-shadow: 0px 0px 11px #ffffff;
 	}	
 	
-	
-	
-	
 	.sub-menu-container {
 		margin-top: -3px;
-		display: block;
-		position: relative;
+		display: flex;
+		align-items: center;
 		height: 55px;
 		width: 100%;
 		background-color: #BCCCDB;
+	}
+	
+	.sub-menu{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		box-sizing: border-box;
+		max-width: 1500px;
+		margin: auto;
+		border-right: 1px solid #7695A8;
+		height: 33px;
+		width: 100%;
+	}
+	
+	.sub-menu>li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 33px;
+		box-sizing: border-box;
+		border-left: 1px solid #7695A8;
+	}
+	.sub-6 {
+		width: 7%;
+	}
+	.sub-9 {
+		width: 9%;
+	}
+	.sub-10 {
+		width: 10%;
+	}
+	.sub-12 {
+		width: 12%;
+	}
+	.sub-menu>li>a {
+		color: black;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 33px;
+		text-align: center;
+		box-sizing: border-box;
+		font-size: 11px;
+	}
+	.sub-menu>li>a:hover {
+		font-weight: 700;
+	}
+	.sub-menu>li>a:active {
+		font-weight: 700;
+		color: red;
 	}
 	
 	@media (min-width:1151px) and (max-width:1400px) {
@@ -1550,7 +1588,9 @@ header {
 		.mm-katalog, .mm-sale, .mm-discounts, .mm-prezents, .mm-news, .mm-media, .mm-faq{
 			font-size: 17px;
 		}
-		
+		.sub-menu>li>a {
+			font-size: 10px;
+	}
 	}
 	
 	@media (min-width:961px) and (max-width:1150px) {
@@ -1591,6 +1631,9 @@ header {
 				.mm-katalog, .mm-sale, .mm-discounts, .mm-prezents, .mm-news, .mm-media, .mm-faq{
 			font-size: 15px;
 		}
+				.sub-menu>li>a {
+			font-size: 9px;
+	}
 	
 	}
 }
