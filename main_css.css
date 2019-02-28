@@ -775,7 +775,7 @@ header {
 	margin-top: 70px;
 }
 .head-baner {
-	background-color: #BCCCDB;
+	background-color: black;
 	display: flex;
 	flex-direction: column;	
 	justify-content: center;
@@ -801,7 +801,12 @@ header {
 	.header-info-container, .sub-menu, .main-menu, .baner-txt1, .baner-txt2{
 		display: none;
 	}
-
+	.head-baner:after {
+  	content: "";
+		display: block;
+		height: 5px;
+		color: black;
+	}
 	.header-logo {
 		display: block;
 		text-align: center;
